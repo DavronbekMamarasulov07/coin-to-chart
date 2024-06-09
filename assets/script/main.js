@@ -1,5 +1,7 @@
 import axios from "./axios.js";
 
+alert("Hozirda ma'lumotlar  ba'zasida faqatgina 2023.06.01 dan to shu kungacha bulgan ma'lumotlar mavjud va oy kiritish kerak bo'lgan joyga 11-oygacha kirita olasiz! 0 ham mumkin emas" )
+
 const ctx = document.querySelector("#myChart");
 const $form = document.querySelector("#form");
 const $year = document.querySelector("#year");
@@ -21,7 +23,7 @@ const renderData = async (e) => {
         let toMonth = +($toMonth.value);
 
         if (year < 2023 || year > new Date().getFullYear()  || (fromMonth >= 12 || fromMonth === 0) || (toMonth >= 12 || toMonth === 0)){
-            alert("Hozirda ma'lumotlar  ba'zasida faqatginda 2023.06.01 dan to shu kungacha bulgan ma'lumotlar mavjud va oy kiritish kerak bo'lgan joyga 11-oygacha kirita olasiz! 0 ham mumkin emas" );
+            alert("Hozirda ma'lumotlar  ba'zasida faqatgina 2023.06.01 dan to shu kungacha bulgan ma'lumotlar mavjud va oy kiritish kerak bo'lgan joyga 11-oygacha kirita olasiz! 0 ham mumkin emas" );
             return;
         }
 
