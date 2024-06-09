@@ -18,6 +18,12 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: url(https://cimg.co/news/95475/238038/adobestock-164230681.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    color: #fff;
 }
 
 .container{
@@ -39,12 +45,13 @@ body{
 
 h1{
     font-size: 40px;
+
     margin-bottom: 40px;
     text-transform: capitalize;
 }
 
 #myChart{
-    background-color: rgba(117, 204, 255, 0.434);
+    background-color: rgb(255, 201, 143);
     border-radius: 20px;
     width: 100% !important;
     height: 500px !important;
