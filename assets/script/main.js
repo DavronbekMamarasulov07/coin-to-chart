@@ -45,7 +45,7 @@ const renderData = async (e) => {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Bitcoin Price (USD)',
+                    label: `${$search.value.toUpperCase()}`,
                     data: prices,
                     backgroundColor: 'yellow',
                     borderColor: 'dodgerblue',
