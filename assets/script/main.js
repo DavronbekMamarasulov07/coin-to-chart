@@ -7,9 +7,9 @@ const $form = document.querySelector("#form");
 const $year = document.querySelector("#year");
 const $fromMonth = document.querySelector("#from-month");
 const $toMonth = document.querySelector("#to-month");
-const $infoBtn = document.querySelector("#info-click")
-const $cryptoBox =  document.querySelector(".cryto-box")
-const $info = document.querySelector(".info")
+
+const $search = document.querySelector("#search")
+
 
 
 let chart; 
@@ -27,7 +27,7 @@ const renderData = async (e) => {
             return;
         }
 
-        const response = await axios.get("/bitcoin/history?interval=d1");
+        const response = await axios.get(`/${$search.value}/history?interval=d1`);
         const data = response.data.data.filter(i => {
             const date = new Date(i.date);
             return date.getFullYear() === year && (date.getMonth() == fromMonth || date.getMonth() == toMonth);
@@ -74,7 +74,4 @@ const renderData = async (e) => {
 }
 $form.addEventListener("submit", renderData);
 
-$infoBtn.addEventListener("click",() => {
-    $cryptoBox.classList.toggle("show")
-    $info.classList.toggle("show2")
-})  
+ 

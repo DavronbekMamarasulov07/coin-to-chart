@@ -12,25 +12,27 @@
 <body>
     <div class="container">
         <div class="content">
-            <h1>crypto currency chart</h1>
-            <div class="info">
-                <h3>Click to view available crypto currencies <i class="bi bi-arrow-bar-right"></i></h3>
-                <button id="info-click">Click</button>
-            </div>
+            <h1>crypto currency chart
+                <div class="line"></div>
+            </h1>
 
-            <div class="cryto-box">
-                <button>bitcoin</button>
-                <button>ethereum</button>
-                <button>bnb</button>
-                <button>tether</button>
-                <button>solana</button>
-                <button>xrp</button>
-                <button>cardano</button>
-                <button>polygon</button>
-                <button>monero</button>
-                <button>neo</button>
-            </div>
+           
+
             <form id="form">
+                <!-- <input value="bitcoin" autocomplete="off" id="search" type="text" placeholder="Enter coin name..." required> -->
+                <select required id="search">
+                    <option id="default" value="" selected disabled>Select Coin</option>
+                    <option value="bitcoin" >Bitcoin</option>
+                    <option value="ethereum" >Ethereum</option>
+                    <option value="tether" >USDT</option>
+                    <option value="bnb" >BNB</option>
+                    <option value="solana" >Solana</option>
+                    <option value="usdc" >USDC</option>
+                    <option value="xrp" >XRP</option>
+                    <option value="cardano" >ADA</option>
+                    <option value="Avalanche" >AVAX</option>
+                    <option value="tron" >TRC</option>
+                </select>
                 <input value="2023" autocomplete="off" id="year" type="text" placeholder="Enter year..." required>
                 <input value="6" autocomplete="off" id="from-month" type="text" placeholder="Enter from month..." required>
                 <input  autocomplete="off" id="to-month" type="text" placeholder="Enter to month..." required>
